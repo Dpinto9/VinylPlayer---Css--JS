@@ -90,6 +90,7 @@ const songs = [
     }
 ];
 
+
 let currentIndex = 0;
 let state = false;
 
@@ -104,11 +105,25 @@ const toneArm = document.querySelector('.tone-arm');
 const playButton = document.querySelector('.btn');
 const slider = document.querySelector('.slider');
 
+// Loading alert element
+const loadingAlert = document.createElement('div');
+loadingAlert.textContent = "Loading...";
+loadingAlert.style.display = "none";
+loadingAlert.style.position = "absolute";
+loadingAlert.style.top = "50%";
+loadingAlert.style.left = "50%";
+loadingAlert.style.transform = "translate(-50%, -50%)";
+loadingAlert.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+loadingAlert.style.color = "white";
+loadingAlert.style.padding = "10px 20px";
+loadingAlert.style.borderRadius = "5px";
+loadingAlert.style.zIndex = "1000";
+document.body.appendChild(loadingAlert);
+
 // Function to update the album info
 function updateAlbum() {
     const song = songs[currentIndex];
     albumTitle.textContent = song.artist + " - " + song.song_name;
-    // albumImage.src = song.image; 
     audioElement.src = song.link; // Update audio source
     
     leftButton.disabled = currentIndex === 0;
@@ -120,7 +135,10 @@ function updateAlbum() {
     } else {
         albumTitle.style.animation = "none";
     }
-    
+
+    // Show loading alert
+    loadingAlert.style.display = "block";
+
     // If the record is playing, ensure the new song starts playing
     if (state) {
         record.classList.add("on");
@@ -128,6 +146,19 @@ function updateAlbum() {
         audioElement.play();
     }
 }
+
+// Event listeners to handle loading states
+audioElement.addEventListener('waiting', () => {
+    loadingAlert.style.display = "block";
+});
+
+audioElement.addEventListener('canplay', () => {
+    loadingAlert.style.display = "none";
+});
+
+audioElement.addEventListener('playing', () => {
+    loadingAlert.style.display = "none";
+});
 
 // Functions to handle previous and next button clicks
 function showPrevious() {
