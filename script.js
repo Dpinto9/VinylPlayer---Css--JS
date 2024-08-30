@@ -94,10 +94,10 @@ let currentIndex = 0;
 let state = false;
 
 // DOM Elements
-const albumTitle = document.querySelector('.album-title');
-const albumImage = document.querySelector('.album img');
-const leftButton = document.querySelector('.left');
-const rightButton = document.querySelector('.right');
+const albumTitle = document.querySelector('.titleOfSong');
+// const albumImage = document.querySelector('.album img');
+const leftButton = document.querySelector('.leftskip');
+const rightButton = document.querySelector('.rightskip');
 const audioElement = document.querySelector('.my-song');
 const record = document.querySelector('.record');
 const toneArm = document.querySelector('.tone-arm');
@@ -107,12 +107,19 @@ const slider = document.querySelector('.slider');
 // Function to update the album info
 function updateAlbum() {
     const song = songs[currentIndex];
-    albumTitle.textContent = song.song_name;
-    albumImage.src = song.image; // Update album image
+    albumTitle.textContent = song.artist + " - " + song.song_name;
+    // albumImage.src = song.image; 
     audioElement.src = song.link; // Update audio source
     
     leftButton.disabled = currentIndex === 0;
     rightButton.disabled = currentIndex === songs.length - 1;
+
+    // Check if text overflows and add/remove scrolling effect
+    if (albumTitle.scrollWidth > albumTitle.clientWidth) {
+        albumTitle.style.animation = "marquee 16s linear infinite";
+    } else {
+        albumTitle.style.animation = "none";
+    }
     
     // If the record is playing, ensure the new song starts playing
     if (state) {
