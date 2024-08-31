@@ -263,3 +263,25 @@ body{
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
+
+.seconds{
+    background-color: #181312;
+    height: 6px;
+    width: 75px;
+    position: absolute;
+    bottom: 57px;
+    left: 69px;
+    border-top: 1.5px solid #4b3e3e;
+    border-left: 1.5px solid #4b3e3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 1px;
+}
+
+.FiveSeconds{
+    cursor: pointer;
+}

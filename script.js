@@ -104,6 +104,7 @@ const record = document.querySelector('.record');
 const toneArm = document.querySelector('.tone-arm');
 const playButton = document.querySelector('.btn');
 const slider = document.querySelector('.slider');
+const scratchSound = new Audio('Sounds/scratch.mp3');
 
 // Loading alert element
 const loadingAlert = document.createElement('div');
@@ -175,9 +176,101 @@ function showNext() {
     }
 }
 
+// Function to play the scratch sound and pause/resume the song
+function playScratchSound() {
+    const wasPlaying = !audioElement.paused;  // Check if the song was playing
+    audioElement.pause();  // Pause the current song
+
+    scratchSound.currentTime = 0;  // Ensure scratch sound starts from the beginning
+    scratchSound.play().then(() => {
+        scratchSound.addEventListener('ended', () => {
+            if (wasPlaying) {
+                audioElement.play();  // Resume the song after scratch sound ends
+            }
+        });
+    }).catch(error => {
+        console.error('Error playing scratch sound:', error);
+        if (wasPlaying) {
+            audioElement.play();  // Resume the song if the scratch sound fails to play
+        }
+    });
+}
+
+// Function to skip forward 5 seconds
+function skipForward() {
+    playScratchSound();  // Play scratch sound before skipping
+    scratchSound.addEventListener('ended', () => {
+        if (audioElement.currentTime + 5 < audioElement.duration) {
+            audioElement.currentTime += 5;
+        } else {
+            audioElement.currentTime = audioElement.duration;
+        }
+    });
+}
+
+// Function to skip backward 5 seconds
+function skipBackward() {
+    playScratchSound();  // Play scratch sound before skipping
+    scratchSound.addEventListener('ended', () => {
+        if (audioElement.currentTime - 5 > 0) {
+            audioElement.currentTime -= 5;
+        } else {
+            audioElement.currentTime = 0;
+        }
+    });
+}
+
+// Function to play a random song
+function playRandomSong() {
+    currentIndex = Math.floor(Math.random() * songs.length);
+    updateAlbum();
+}
+
+// Add buttons for random song and loop last 10 seconds
+const randomButton = document.createElement('button');
+randomButton.textContent = "Random Song";
+randomButton.addEventListener('click', playRandomSong);
+document.body.appendChild(randomButton);
+
+const loopButton = document.createElement('button');
+loopButton.textContent = "Loop Last 10s";
+loopButton.addEventListener('click', loopLast10Seconds);
+document.body.appendChild(loopButton);
+
+// Function to loop the last 10 seconds of the current song
+let loopInterval;
+function loopLast10Seconds() {
+    if (loopInterval) {
+        clearInterval(loopInterval);
+        loopInterval = null;
+    } else {
+        loopInterval = setInterval(() => {
+            if (audioElement.currentTime > audioElement.duration - 10) {
+                audioElement.currentTime = audioElement.duration - 10;
+            }
+        }, 1000);
+    }
+}
+
+// Function to automatically skip to the next song when the current one ends
+audioElement.addEventListener('ended', showNext);
+
+const playSound = new Audio('sounds/start.mp3');
+
+// Function to play only the first 5 seconds of the sound
+function playPartialSound(sound, duration) {
+    sound.currentTime = 0; // Start from the beginning
+    sound.play();
+    
+    setTimeout(() => {
+        sound.pause();
+    }, duration * 1000); // Stop the sound after 'duration' seconds
+}
+
 // Function to handle play/pause
 function togglePlay() {
     if (state === false) {
+        playPartialSound(playSound, 3); 
         record.classList.add("on");
         toneArm.classList.add("play");
         audioElement.play();
@@ -195,6 +288,8 @@ function adjustVolume(e) {
 }
 
 // Event listeners
+document.querySelector('.FiveSeconds.leftSeconds').addEventListener('click', skipBackward);
+document.querySelector('.FiveSeconds.rightSeconds').addEventListener('click', skipForward);
 playButton.addEventListener("click", togglePlay);
 slider.addEventListener("input", adjustVolume);
 leftButton.addEventListener('click', showPrevious);
