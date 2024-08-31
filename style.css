@@ -282,6 +282,74 @@ body{
     border-radius: 1px;
 }
 
+.seconds p{
+    color: white;
+    font-size: 10px;
+}
+
 .FiveSeconds{
     cursor: pointer;
 }
+
+.extras{
+    background-color: var(--reseda-green);
+    height: 36px;
+    width: 90px;
+    position: absolute;
+    top: -38px;
+    left: 6px;
+    border-top: 3.5px solid #606f49;
+    border-left: 3.5px solid #606f49;
+    border-radius: 3px;
+    box-shadow: -4px -2px 0 0 #606f49;
+}
+
+.text{
+    width: 100%;
+    color: white;
+    font-size: 17px;
+    padding-left: 0px;
+    margin: 0;
+    text-wrap: nowrap;
+    overflow: hidden;
+    flex: 1; 
+}
+
+.time{
+    background-color: #747371;
+    border: 2px solid #3a3635;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 60%; /* Set the desired width for the text area */
+    overflow: hidden;
+    flex-shrink: 0;
+    border-radius: 2px;
+}
+
+.group {
+    /* background-color: #3a3635; */
+    height: 24px;
+    width: 25px;
+    position: absolute;
+    top: 4px;
+    left: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activated{
+    background-color: #ad2831;
+}
+
+.group button{
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+}
+
+
+

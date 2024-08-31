@@ -87,12 +87,174 @@ const songs = [
         "duration": "3:58",
         "link": "https://ia803204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Days%20In%20The%20East.mp3",
         "image": "https://via.placeholder.com/300x300.png?text=Days+In+The+East"
+    },
+    {
+        "song_name": "Demons",
+        "artist": "Drake",
+        "featuring": ["Fivio Foreign", "Sosa Geek"],
+        "duration": "3:19",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Demons%20ft.%20Fivio%20Foreign%2C%20Sosa%20Geek.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Demons"
+    },
+    {
+        "song_name": "Desires",
+        "artist": "Drake",
+        "featuring": ["Future"],
+        "duration": "2:57",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Desires%20ft.%20Future.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Desires"
+    },
+    {
+        "song_name": "Emotionless",
+        "artist": "Drake",
+        "featuring": [],
+        "duration": "2:38",
+        "link": "https://ia803204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Emotionless.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Emotionless"
+    },
+    {
+        "song_name": "Free Spirit",
+        "artist": "Drake",
+        "featuring": ["Rick Ross"],
+        "duration": "3:09",
+        "link": "https://ia803204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Free%20Spirit%20%28ft.%20Rick%20Ross%29.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Free+Spirit"
+    },
+    {
+        "song_name": "God's Plan",
+        "artist": "Drake",
+        "featuring": [],
+        "duration": "3:18",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20God%27s%20Plan.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=God%27s+Plan"
+    },
+    {
+        "song_name": "H.Y.F.R",
+        "artist": "Drake",
+        "featuring": ["Lil Wayne"],
+        "duration": "3:49",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20H.Y.F.R%20ft.%20Lil%20Wayne.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=H.Y.F.R"
+    },
+    {
+        "song_name": "Headlines",
+        "artist": "Drake",
+        "featuring": [],
+        "duration": "3:25",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Headlines.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Headlines"
+    },
+    {
+        "song_name": "Hold On, We're Going Home",
+        "artist": "Drake",
+        "featuring": ["Majid Jordan"],
+        "duration": "3:47",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Hold%20On%2C%20We%27re%20Going%20Home%20%28feat.%20Majid%20Jordan%29.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Hold+On%2C+We%27re+Going+Home"
+    },
+    {
+        "song_name": "Demons",
+        "artist": "Drake",
+        "featuring": ["Fivio Foreign", "Sosa Geek"],
+        "duration": "3:19",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Demons%20ft.%20Fivio%20Foreign%2C%20Sosa%20Geek.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Demons"
+    },
+    {
+        "song_name": "Desires",
+        "artist": "Drake",
+        "featuring": ["Future"],
+        "duration": "2:57",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Desires%20ft.%20Future.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Desires"
+    },
+    {
+        "song_name": "Emotionless",
+        "artist": "Drake",
+        "featuring": [],
+        "duration": "2:38",
+        "link": "https://ia803204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Emotionless.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Emotionless"
+    },
+    {
+        "song_name": "Free Spirit",
+        "artist": "Drake",
+        "featuring": ["Rick Ross"],
+        "duration": "3:09",
+        "link": "https://ia803204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Free%20Spirit%20%28ft.%20Rick%20Ross%29.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Free+Spirit"
+    },
+    {
+        "song_name": "God's Plan",
+        "artist": "Drake",
+        "featuring": [],
+        "duration": "3:18",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20God%27s%20Plan.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=God%27s+Plan"
+    },
+    {
+        "song_name": "H.Y.F.R",
+        "artist": "Drake",
+        "featuring": ["Lil Wayne"],
+        "duration": "3:49",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20H.Y.F.R%20ft.%20Lil%20Wayne.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=H.Y.F.R"
+    },
+    {
+        "song_name": "Headlines",
+        "artist": "Drake",
+        "featuring": [],
+        "duration": "3:25",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Headlines.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Headlines"
+    },
+    {
+        "song_name": "Hold On, We're Going Home",
+        "artist": "Drake",
+        "featuring": ["Majid Jordan"],
+        "duration": "3:47",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Hold%20On%2C%20We%27re%20Going%20Home%20%28feat.%20Majid%20Jordan%29.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Hold+On%2C+We%27re+Going+Home"
+    },
+    {
+        "song_name": "In My Feelings",
+        "artist": "Drake",
+        "featuring": [],
+        "duration": "3:37",
+        "link": "https://ia803204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20In%20My%20Feelings.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=In+My+Feelings"
+    },
+    {
+        "song_name": "Nonstop",
+        "artist": "Drake",
+        "featuring": [],
+        "duration": "3:58",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Nonstop.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Nonstop"
+    },
+    {
+        "song_name": "Not You Too",
+        "artist": "Drake",
+        "featuring": ["Chris Brown"],
+        "duration": "3:23",
+        "link": "https://ia903204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Not%20You%20Too%20ft.%20Chris%20Brown.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Not+You+Too"
+    },
+    {
+        "song_name": "Pain 1993",
+        "artist": "Drake",
+        "featuring": ["Playboi Carti"],
+        "duration": "3:32",
+        "link": "https://ia803204.us.archive.org/10/items/drake-kanye-west-lil-wayne-eminem-forever_202007/Drake%20-%20Pain%201993%20ft.%20Playboi%20Carti.mp3",
+        "image": "https://via.placeholder.com/300x300.png?text=Pain+1993"
     }
+    
 ];
 
 
 let currentIndex = 0;
 let state = false;
+
 
 // DOM Elements
 const albumTitle = document.querySelector('.titleOfSong');
@@ -105,6 +267,9 @@ const toneArm = document.querySelector('.tone-arm');
 const playButton = document.querySelector('.btn');
 const slider = document.querySelector('.slider');
 const scratchSound = new Audio('Sounds/scratch.mp3');
+const timeDisplay = document.querySelector('.extras .time');
+const playSound = new Audio('sounds/start.mp3');
+
 
 // Loading alert element
 const loadingAlert = document.createElement('div');
@@ -178,27 +343,28 @@ function showNext() {
 
 // Function to play the scratch sound and pause/resume the song
 function playScratchSound() {
-    const wasPlaying = !audioElement.paused;  // Check if the song was playing
-    audioElement.pause();  // Pause the current song
+    const wasPlaying = !audioElement.paused;
+    audioElement.pause();
 
-    scratchSound.currentTime = 0;  // Ensure scratch sound starts from the beginning
+    scratchSound.currentTime = 0;
+
     scratchSound.play().then(() => {
         scratchSound.addEventListener('ended', () => {
             if (wasPlaying) {
-                audioElement.play();  // Resume the song after scratch sound ends
+                audioElement.play();
             }
         });
     }).catch(error => {
         console.error('Error playing scratch sound:', error);
         if (wasPlaying) {
-            audioElement.play();  // Resume the song if the scratch sound fails to play
+            audioElement.play();  
         }
     });
 }
 
 // Function to skip forward 5 seconds
 function skipForward() {
-    playScratchSound();  // Play scratch sound before skipping
+    playScratchSound();
     scratchSound.addEventListener('ended', () => {
         if (audioElement.currentTime + 5 < audioElement.duration) {
             audioElement.currentTime += 5;
@@ -219,64 +385,102 @@ function skipBackward() {
         }
     });
 }
-
-// Function to play a random song
-function playRandomSong() {
-    currentIndex = Math.floor(Math.random() * songs.length);
-    updateAlbum();
-}
-
-// Add buttons for random song and loop last 10 seconds
-const randomButton = document.createElement('button');
-randomButton.textContent = "Random Song";
-randomButton.addEventListener('click', playRandomSong);
-document.body.appendChild(randomButton);
-
-const loopButton = document.createElement('button');
-loopButton.textContent = "Loop Last 10s";
-loopButton.addEventListener('click', loopLast10Seconds);
-document.body.appendChild(loopButton);
-
-// Function to loop the last 10 seconds of the current song
+const loopButton = document.querySelector('.loopbutton');
 let loopInterval;
-function loopLast10Seconds() {
-    if (loopInterval) {
+let isLooping = false;
+let loopStartTime = 0;
+let loopCount = 0;
+let isPlayingScratch = false;
+let hasPlayedScratch = false; 
+const loopDuration = 10;
+
+function toggleLoop() {
+    isLooping = !isLooping;
+
+    if (isLooping) {
+        loopButton.classList.add('activated');
+        timeDisplay.classList.add('activated');
+
+        loopStartTime = audioElement.currentTime - loopDuration;
+
+        if (loopStartTime < 0) {
+            loopStartTime = 0;
+        }
+
+        console.log(`Loop start time set to: ${loopStartTime}`);
+        updateTime();
+
+        hasPlayedScratch = false;
+        clearInterval(loopInterval);
+
+        loopInterval = setInterval(() => {
+            const currentTime = audioElement.currentTime;
+
+            if (currentTime >= loopStartTime + loopDuration) {
+                if (!hasPlayedScratch) {
+                    playScratchSound();
+                    hasPlayedScratch = true;
+
+                    setTimeout(() => {
+                        hasPlayedScratch = false;
+                    }, 10000);
+                }
+
+                audioElement.currentTime = loopStartTime;
+            }
+        }, 50);
+    } else {
+        loopButton.classList.remove('activated');
+        timeDisplay.classList.remove('activated');
         clearInterval(loopInterval);
         loopInterval = null;
-    } else {
-        loopInterval = setInterval(() => {
-            if (audioElement.currentTime > audioElement.duration - 10) {
-                audioElement.currentTime = audioElement.duration - 10;
-            }
-        }, 1000);
+        console.log('Loop stopped.');
     }
 }
 
-// Function to automatically skip to the next song when the current one ends
-audioElement.addEventListener('ended', showNext);
+loopButton.addEventListener('click', toggleLoop);
 
-const playSound = new Audio('sounds/start.mp3');
-
-// Function to play only the first 5 seconds of the sound
-function playPartialSound(sound, duration) {
-    sound.currentTime = 0; // Start from the beginning
-    sound.play();
-    
-    setTimeout(() => {
-        sound.pause();
-    }, duration * 1000); // Stop the sound after 'duration' seconds
+function updateTime() {
+    let timeText = '';
+    timeText = formatTime(audioElement.currentTime);
+    timeDisplay.textContent = timeText;
 }
+
+// Function to automatically skip to the next song when the current one ends
+let partialSound;
+function playPartialSound(src, duration) {
+    partialSound = new Audio(src);
+    partialSound.currentTime = 0; 
+    partialSound.play();
+
+    setTimeout(() => {
+        partialSound.pause();
+        partialSound.currentTime = 0;
+    }, duration * 1000);
+}
+
+function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+}
+
+
 
 // Function to handle play/pause
 function togglePlay() {
     if (state === false) {
-        playPartialSound(playSound, 3); 
+        playPartialSound('sounds/start.mp3', 3);
         record.classList.add("on");
         toneArm.classList.add("play");
         audioElement.play();
     } else {
         record.classList.remove("on");
         toneArm.classList.remove("play");
+        if (partialSound) {
+            partialSound.pause(); 
+            partialSound.currentTime = 0;
+        }
         audioElement.pause();
     }
     state = !state;
@@ -285,9 +489,13 @@ function togglePlay() {
 // Function to handle volume control
 function adjustVolume(e) {
     audioElement.volume = Number(e.target.value);
+    scratchSound.volume = Number(e.target.value);
+    playSound.volume = Number(e.target.value);
 }
 
 // Event listeners
+audioElement.addEventListener('ended', showNext);
+audioElement.addEventListener('timeupdate', updateTime);
 document.querySelector('.FiveSeconds.leftSeconds').addEventListener('click', skipBackward);
 document.querySelector('.FiveSeconds.rightSeconds').addEventListener('click', skipForward);
 playButton.addEventListener("click", togglePlay);
